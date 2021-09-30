@@ -1,0 +1,66 @@
+body{
+    margin: 0
+}
+
+*{
+    box-sizing:border-box;
+}
+.container
+{
+    background-color:pink;
+}
+
+.container,.input-container,.task-container
+{
+    border:1px solid;
+}
+.input-container
+{
+    background-color:rgb(219, 146, 159);
+    height: 20vh;
+    text-align: center;
+    margin:10px;
+    padding:57px;
+}
+
+.task-container
+{
+    height: 80vh;
+}
+
+.task-list
+{
+    padding: 0;
+}
+
+.task-input
+{
+    text-align: center;
+    width: 30%;
+    height: 2rem;
+    font-size: 1rem;
+    background-color: black;
+    color:blanchedalmond;
+    border:none;
+}
+
+.task-container li
+{
+    font-size: 1.5rem;
+    font-style: italic;
+    list-style: none;
+    background-color:rgb(219, 146, 159) ;
+    width:40%;
+    margin:10px auto 10px auto;
+}
+
+/* to make the web app mobile-friendly we use MEDIA QUERY  */
+
+ @media screen and (max-width: 768px) 
+ {
+   .task-input, .task-container li
+   {
+       width:70%;
+   }
+
+}
